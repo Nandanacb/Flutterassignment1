@@ -11,13 +11,13 @@ class CardDesign extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(
-            "Payment Details",
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            "    Payment Details",
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          Text("How would you like to pay?"),
+          Text("      How would you like to pay?",style: TextStyle(fontSize: 20,fontWeight: FontWeight.normal),),
           SizedBox(
-              height: 200,
-              width: 400,
+              height: 250,
+              width: 500,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Card(
@@ -57,10 +57,13 @@ class CardDesign extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                           ],
+                          
                         ),
+                      
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(13.0),
+                        
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -68,7 +71,7 @@ class CardDesign extends StatelessWidget {
                               "CARDHOLDER",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 10,
+                                fontSize: 8,
 
                                 // fontWeight: FontWeight.bold
                               ),
@@ -77,46 +80,51 @@ class CardDesign extends StatelessWidget {
                               "VALID THRU",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 10,
+                                fontSize: 8,
                               ),
                             ),
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                           Text(
-                            "SELMIHOUSSEM",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 10,
-                      
-                              // fontWeight: FontWeight.bold
+                      Padding(
+                        padding: const EdgeInsets.all(13.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                             Text(
+                              "SELMIHOUSSEM",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                        
+                                // fontWeight: FontWeight.bold
+                              ),
                             ),
-                          ),
-                          Text(
-                            "08/2022",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 10,
+                            Text(
+                              "08/2022",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       )
                     ],
                   ),
                 ),
               )),
           SizedBox(
-              height: 200,
-              width: 400,
+              height: 250,
+              width: 500,
               child: Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Card(
                     shadowColor: Colors.black,
                     elevation: 10,
-                    color: Color.fromARGB(255, 10, 2, 74),
+                    color: Colors.black,
                     child: Column(
                       children: [
                         Padding(
@@ -152,7 +160,7 @@ class CardDesign extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(13.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -160,7 +168,7 @@ class CardDesign extends StatelessWidget {
                                 "CARDHOLDER",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 10,
+                                  fontSize: 8,
 
                                   // fontWeight: FontWeight.bold
                                 ),
@@ -169,32 +177,35 @@ class CardDesign extends StatelessWidget {
                                 "VALID THRU",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 10,
+                                  fontSize: 8,
                                 ),
                               ),
                             ],
                                                       ),
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "SELMIHOUSSEM",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 10,
-
-                                // fontWeight: FontWeight.bold
+                        Padding(
+                          padding: const EdgeInsets.all(13.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "SELMIHOUSSEM",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 10,
+                          
+                                  // fontWeight: FontWeight.bold
+                                ),
                               ),
-                            ),
-                            Text(
-                              "08/2022",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 10,
+                              Text(
+                                "08/2022",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 10,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         )
                       ],
                     ),
